@@ -45,7 +45,7 @@ class Song
       # puts @@genres.count
     end
 
-    # return hash
+    return hash
 
     # hash["new_key"] = "New Value"
 
