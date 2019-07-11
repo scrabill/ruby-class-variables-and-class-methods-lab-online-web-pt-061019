@@ -28,13 +28,21 @@ class Song
     @@genres.uniq
   end
 
+  # def genres # def genres passes but maybe it shouldn't?
+  #   @@genres.uniq
+  # end
+
   def self.artists
     @@artists.uniq
   end
 
-  def genre_count
+  def self.genre_count
     hash = {}
 
+    @@genres.uniq.each do |genre|
+      hash[:genre] = []
+      hash[:genre] = @@genres.count(genre)
+    end
 
     # hash["new_key"] = "New Value"
 
