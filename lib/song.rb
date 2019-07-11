@@ -42,6 +42,7 @@ class Song
     @@genres.uniq.each do |genre|
       hash[:genre] = []
       hash[:genre] = @@genres.count #(genre)
+      puts @@genres.count
     end
 
     # hash["new_key"] = "New Value"
