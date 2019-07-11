@@ -42,7 +42,7 @@ class Song
     @@genres.uniq.each do |genre|
       hash[genre] = []
       hash[genre] = @@genres.count #(genre)
-      puts @@genres.count
+      # puts @@genres.count
     end
 
     return hash
