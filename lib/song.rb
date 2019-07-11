@@ -39,13 +39,13 @@ class Song
   def self.genre_count
     hash = {}
 
-    @@genres.uniq.each do |genre|
+    @@genres.uniq.each do |genre| # Get each unique item in the @@genres array..
       # hash[genre] = []
-      hash[genre] = @@genres.count(genre)
+      hash[genre] = @@genres.count(genre) # Make it a key, and the number of times that genre appears as the value...
       # puts @@genres.count
     end
 
-    return hash
+    return hash # Then return the array
 
     # hash["new_key"] = "New Value"
 
