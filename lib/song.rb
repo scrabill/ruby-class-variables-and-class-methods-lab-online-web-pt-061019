@@ -54,6 +54,6 @@ class Song
     end
     return hash # Then return the array
 
-  end  
+  end
 
 end
