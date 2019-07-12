@@ -50,7 +50,7 @@ class Song
     hash = {}
 
     @@artists.uniq.each do |artist| # Get each unique item in the @@genres array..
-      hash[genre] = @@genres.count(genre) # Make it a key, and the number of times that genre appears as the value...
+      hash[artist] = @@artists.count(artist) # Make it a key, and the number of times that genre appears as the value...
     end
     return hash # Then return the array
 
